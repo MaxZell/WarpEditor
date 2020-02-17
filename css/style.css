@@ -10,13 +10,15 @@ p{
 }
 
 .main{
-  padding-left: 15%;
+  padding-left: 10%;
   height: 100%;
 }
 
 textarea{
   width: 100%;
   height: 100%;
+  /* padding-bottom: 5%;
+  padding-right: 5%; */
   /* height: auto;
   width: 900px; */
   min-width: 700px;
@@ -30,7 +32,7 @@ textarea{
 }
 
 .left-tabs-menu{
-  width: 15%;
+  width: 10%;
   height: 100%;
   background-color: gray;
   position: fixed;
@@ -51,7 +53,7 @@ textarea{
   color: white;
 }
 
-.select-technology{
+/* .select-technology{
   height: 15%;
   width: 15%;
   top: 45%;
@@ -60,4 +62,4 @@ textarea{
   position: fixed;
   z-index: 1;
   background-color: red;
-}
+} */

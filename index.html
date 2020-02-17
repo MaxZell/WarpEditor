@@ -8,10 +8,11 @@
       #select-technology {
         height: 15%;
         width: 15%;
-        top: 45%;
-        left: 45%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
         margin-right: -50%;
-        position: fixed;
+        transform: translate(-50%, -50%);
         z-index: 1;
         background-color: red;
       }
@@ -23,33 +24,33 @@
       module = {}
     </script>
     <script src="./scripts/connectionMenu.js" charset="utf-8"></script>
-    <script type="text/javascript">
-
     <div class="left-tabs-menu">
       <!-- https://www.w3schools.com/howto/howto_js_tabs.asp -->
       <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
       <!-- https://www.w3schools.com/jsref/met_table_insertrow.asp -->
       <!-- https://github.com/simply-coded/electron-navigation -->
       <div class="left-tabs-menu-buttons">
-        <!-- https://www.w3schools.com/howto/howto_js_tabs.asp -->
-        <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
-        <!-- https://www.w3schools.com/jsref/met_table_insertrow.asp -->
-        <!-- https://github.com/simply-coded/electron-navigation -->
-        <button type="button" name="connect" onclick="startConnection()">CONNECT</button><br>
+        <!-- <button type="button" name="connect" onclick="startConnection()">CONNECT</button><br>
         <button type="button" id="conn" name="connect2" onclick="createMyConnWindow()">CONNECT Q</button><br>
         <button type="button" name="connect3" onclick="openNewTab()">CONNECT T</button>
-        <button type="button" name="connect4" onclick="window.location.href = 'connectionMenu.html';">OPEN</button>
-        <button type="button" name="connect4" onclick="hideConnMenu()">Hide</button>
-        <button onclick="myFunction()">Try it</button>
+        <button type="button" name="connect4" onclick="window.location.href = 'connectionMenu.html';">OPEN</button> -->
+        <button type="button" name="connect4" onclick="hideConnMenu()">Open connection menu</button>
+        <!-- <button onclick="myFunction()">Try it</button> -->
       </div>
     </div>
     <div class="main">
         <!-- <p>Hello Maxim</p> -->
         <textarea name="mainTextArea"></textarea><br>
+        <!-- https://www.codeproject.com/Articles/34435/Building-Your-Own-JavaScript-Editor -->
+        <!-- https://ace.c9.io/#nav=higlighter -->
+        <!-- https://ace.c9.io/#nav=embedding -->
+        <!-- https://github.com/ajaxorg/ace-builds/ -->
+        <!-- https://stackoverflow.com/questions/19346975/highlight-js-in-textarea/27553858 -->
+        <!-- https://codemirror.net -->
     </div>
-    <div id="myDIV">
+    <!-- <div id="myDIV">
     This is my DIV element.
-    </div>
+    </div> -->
     <div id="select-technology" style='display:none;'>
       <ul>
         <li><button type="button" name="wlan">WLAN</button></li>
@@ -60,14 +61,14 @@
     function hideConnMenu() {
       document.getElementById('select-technology').style.display = 'block';
       }
-    function myFunction() {
-      var x = document.getElementById("select-technology");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
+    // function myFunction() {
+    //   var x = document.getElementById("select-technology");
+    //   if (x.style.display === "none") {
+    //     x.style.display = "block";
+    //   } else {
+    //     x.style.display = "none";
+    //   }
+    // }
     </script>
     <!-- <script type="text/javascript">
         // require('./scripts/renderer.js')
