@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Warp Editor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      #select-technology {
+        height: 15%;
+        width: 15%;
+        top: 45%;
+        left: 45%;
+        margin-right: -50%;
+        position: fixed;
+        z-index: 1;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var require = () => {}
+      module = {}
+    </script>
+    <script src="./scripts/connectionMenu.js" charset="utf-8"></script>
+    <script type="text/javascript">
+
+    <div class="left-tabs-menu">
+      <!-- https://www.w3schools.com/howto/howto_js_tabs.asp -->
+      <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+      <!-- https://www.w3schools.com/jsref/met_table_insertrow.asp -->
+      <!-- https://github.com/simply-coded/electron-navigation -->
+      <div class="left-tabs-menu-buttons">
+        <!-- https://www.w3schools.com/howto/howto_js_tabs.asp -->
+        <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+        <!-- https://www.w3schools.com/jsref/met_table_insertrow.asp -->
+        <!-- https://github.com/simply-coded/electron-navigation -->
+        <button type="button" name="connect" onclick="startConnection()">CONNECT</button><br>
+        <button type="button" id="conn" name="connect2" onclick="createMyConnWindow()">CONNECT Q</button><br>
+        <button type="button" name="connect3" onclick="openNewTab()">CONNECT T</button>
+        <button type="button" name="connect4" onclick="window.location.href = 'connectionMenu.html';">OPEN</button>
+        <button type="button" name="connect4" onclick="hideConnMenu()">Hide</button>
+        <button onclick="myFunction()">Try it</button>
+      </div>
+    </div>
+    <div class="main">
+        <!-- <p>Hello Maxim</p> -->
+        <textarea name="mainTextArea"></textarea><br>
+    </div>
+    <div id="myDIV">
+    This is my DIV element.
+    </div>
+    <div id="select-technology" style='display:none;'>
+      <ul>
+        <li><button type="button" name="wlan">WLAN</button></li>
+        <li><button type="button" name="bluethoth">Bluethoth</button></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+    function hideConnMenu() {
+      document.getElementById('select-technology').style.display = 'block';
+      }
+    function myFunction() {
+      var x = document.getElementById("select-technology");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+    <!-- <script type="text/javascript">
+        // require('./scripts/renderer.js')
+
+      function createMyConnWindow(){
+        var ipcRenderer = require('ipc-renderer');
+        document.getElementById('conn').addEventListener('click', () => {
+        ipcRenderer.send('add-conn-window')
+        })
+      }
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,63 @@
+body{
+  background-color: #1A242F; /*#2C3E50*/ /* green #90C418*/
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+p{
+  color: #2C3E50;
+}
+
+.main{
+  padding-left: 15%;
+  height: 100%;
+}
+
+textarea{
+  width: 100%;
+  height: 100%;
+  /* height: auto;
+  width: 900px; */
+  min-width: 700px;
+  min-height: 700px;
+  background: #2C3E50;
+  color: white;/* highlight.js */
+  font-size: 20px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+.left-tabs-menu{
+  width: 15%;
+  height: 100%;
+  background-color: gray;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.left-tabs-menu button{
+  width: 100%;
+  /* position: absolute;
+  bottom: 10%; */
+}
+
+.left-tabs-menu-buttons a{
+  background-color: black;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+
+.select-technology{
+  height: 15%;
+  width: 15%;
+  top: 45%;
+  left: 45%;
+  margin-right: -50%;
+  position: fixed;
+  z-index: 1;
+  background-color: red;
+}
